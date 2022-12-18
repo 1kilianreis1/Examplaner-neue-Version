@@ -2,6 +2,7 @@ package com.ws22LN.examplanner;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,11 +26,11 @@ public class AddExamScreen extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_exam_screen);
 
-        date=findViewById(R.id.editTextDate);
-        time=findViewById(R.id.editTextTime);
-        subject=findViewById(R.id.editTextSubject);
-        room=findViewById(R.id.editTextRoom);
-        comment=findViewById(R.id.editTextComment);
+        date= (EditText) findViewById(R.id.editTextDate);
+        time=(EditText) findViewById(R.id.editTextTime);
+        subject=(EditText) findViewById(R.id.editTextSubject);
+        room=(EditText) findViewById(R.id.editTextRoom);
+        comment=(EditText) findViewById(R.id.editTextComment);
 
         button_backToMain= (ImageButton) findViewById(R.id.button_backToMain);
         button_backToMain.setOnClickListener(this);
@@ -56,6 +57,7 @@ public class AddExamScreen extends Activity implements View.OnClickListener {
                 e.setRoom(room.getText().toString());
                 e.setComment(comment.getText().toString());
                 theExam=e;
+                ExamCollection.allExams.add(e);
                 Toast.makeText(this, "Saved successfully", Toast.LENGTH_SHORT).show();
             break;
         }

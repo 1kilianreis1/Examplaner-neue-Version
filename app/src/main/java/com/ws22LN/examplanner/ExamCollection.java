@@ -11,13 +11,12 @@ public class ExamCollection
     static
     {
         allExams=new ArrayList<>();
-
         Exam englisch= new Exam();
         englisch.setDate("01/01/2023");
         englisch.setTime("13:37");
         englisch.setRoom("E420");
         englisch.setSubject("Englisch");
-        englisch.setComment("EZ");
+        englisch.setComment("DAS IST EIN SEHR LANGER DUMMER KOMMENTAR UM DAS LAYOUT ZU ZERSTÖREN");
         allExams.add(englisch);
 
        for (int i= 0; i<40; i++)
