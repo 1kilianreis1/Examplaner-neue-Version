@@ -39,7 +39,7 @@ public class AddExamScreen extends Activity implements View.OnClickListener {
         button_SaveExam.setOnClickListener(this);
     }
 
-//On Click commands for AddExamScreen
+
     @Override
     public void onClick(View view)
     {
