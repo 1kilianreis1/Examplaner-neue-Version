@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+//Adapter für den Recycler in MainActivity
 public class ExamAdapter extends RecyclerView.Adapter<ExamAdapter.ExamViewHolder>
 {
     private final LayoutInflater mLayoutinflator;

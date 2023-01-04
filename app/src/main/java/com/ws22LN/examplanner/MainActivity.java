@@ -50,6 +50,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     }
 
+    //Funktion zum Testen von Notifications
     public void sendNotifTEST(View view)
     {
         Notification notifTEST= new NotificationCompat.Builder(this, notifyTEST_ID)
@@ -62,6 +63,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         notifManager.notify(1, notifTEST);
     }
 
+    //onClick für Buttons in Main
     @Override
     public void onClick(View view)
     {

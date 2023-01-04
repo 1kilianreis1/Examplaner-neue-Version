@@ -7,6 +7,7 @@ import java.util.List;
 
 public class ExamCollection
 {
+    //Liste zum lokalen Speichern von Examen
     public static List<Exam> allExams;
     static
     {
