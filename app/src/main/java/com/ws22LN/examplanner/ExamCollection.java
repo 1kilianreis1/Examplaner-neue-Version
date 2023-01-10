@@ -12,7 +12,7 @@ public class ExamCollection
     static
     {
         allExams=new ArrayList<>();
-        Exam englisch= new Exam();
+       /* Exam englisch= new Exam();
         englisch.setDate("01/01/2023");
         englisch.setTime("13:37");
         englisch.setRoom("E420");
@@ -29,6 +29,6 @@ public class ExamCollection
             mathe.setRoom("I420");
             mathe.setComment("FUCK");
             allExams.add(mathe);
-        }
+        }*/
     }
 }
