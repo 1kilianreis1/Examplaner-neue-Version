@@ -64,14 +64,7 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamAdapter.ExamViewHolder
             this.room=view.findViewById(R.id.textViewRoom);
             this.comment=view.findViewById(R.id.textViewComment);
 
-            itemView.findViewById(R.id.button_Edit).setOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View view)
-                {
-                    Log.d ("test", "onClick: Edit Exam "+)
-                }
-            });
+
         }
 
         public void setDate(String date) {this.date.setText(date);}
