@@ -1,8 +1,10 @@
 package com.ws22LN.examplanner;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -51,6 +53,7 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamAdapter.ExamViewHolder
         TextView room;
         TextView comment;
 
+
         public ExamViewHolder(ExamAdapter examAdapter, View view)
         {
             super(view);
@@ -61,6 +64,14 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamAdapter.ExamViewHolder
             this.room=view.findViewById(R.id.textViewRoom);
             this.comment=view.findViewById(R.id.textViewComment);
 
+            itemView.findViewById(R.id.button_Edit).setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View view)
+                {
+                    Log.d ("test", "onClick: Edit Exam "+)
+                }
+            });
         }
 
         public void setDate(String date) {this.date.setText(date);}

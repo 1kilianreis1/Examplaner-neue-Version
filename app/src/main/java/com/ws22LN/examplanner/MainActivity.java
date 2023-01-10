@@ -79,9 +79,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 startActivity(intent);
                 break;
             */
-            case R.id.button_testNotif:
 
-                break;
         }
     }
 }
