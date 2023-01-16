@@ -50,10 +50,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         button_addExam=(Button) findViewById(R.id.button_addExam);
         button_addExam.setOnClickListener(this);
 
-        button_deleteExam=(ImageButton) findViewById(R.id.button_DeleteExam);
-        button_deleteExam.setOnClickListener(this);
-
-        button_testNotif=(Button)findViewById(R.id.button_testNotif);
+        //button_testNotif=(Button)findViewById(R.id.button_testNotif);
 
         mRecyclerview=findViewById(R.id.recyclerExams);
         ExamAdapter adapter=new ExamAdapter(this.getLayoutInflater());
@@ -99,7 +96,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     //Funktion zum Testen von Notifications
-    public void sendNotifTEST(View view)
+    /*public void sendNotifTEST(View view)
     {
         Notification notifTEST= new NotificationCompat.Builder(this, notifyTEST_ID)
                 .setSmallIcon(R.drawable.ic_test)
@@ -110,6 +107,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 .build();
         notifManager.notify(1, notifTEST);
     }
+
+     */
 
     //onClick für Buttons in Main
     @Override

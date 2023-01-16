@@ -13,7 +13,7 @@
         android:text="@string/add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <!--
     <Button
         android:id="@+id/button_testNotif"
         android:layout_width="wrap_content"
@@ -23,19 +23,7 @@
         android:onClick="sendNotifTEST"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/button_DeleteExam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#8A0202"
-        android:contentDescription="Delete"
-        android:src="@android:drawable/ic_menu_delete"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        -->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerExams"

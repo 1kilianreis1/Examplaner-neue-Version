@@ -23,11 +23,11 @@ public class ExamCollection
        for (int i= 0; i<40; i++)
         {
             Exam mathe = new Exam();
-            mathe.setDate("01/01/2023");
+            mathe.setDate("10/10/2023");
             mathe.setTime("13:37");
             mathe.setSubject("Mathe");
             mathe.setRoom("I420");
-            mathe.setComment("FUCK");
+            mathe.setComment("EZ 1.0");
             allExams.add(mathe);
         }*/
     }
