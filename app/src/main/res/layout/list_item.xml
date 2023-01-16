@@ -19,11 +19,12 @@
         android:id="@+id/textViewTime"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
         android:paddingEnd="10dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textViewSubject"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate" />
 
     <TextView
         android:id="@+id/textViewSubject"
@@ -32,7 +33,7 @@
         android:gravity="center"
         android:paddingEnd="10dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textViewRoom"
+        app:layout_constraintStart_toEndOf="@+id/textViewTime"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -42,8 +43,8 @@
         android:gravity="center"
         android:paddingEnd="10dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textViewDate"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/textViewSubject"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textViewComment"
@@ -52,7 +53,7 @@
         android:gravity="center"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewTime"
+        app:layout_constraintStart_toEndOf="@+id/textViewRoom"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

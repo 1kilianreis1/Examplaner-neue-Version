@@ -31,7 +31,8 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends Activity
+{
     Button button_addExam;
     Button button_testNotif;
     ImageButton button_deleteExam;
@@ -48,7 +49,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
 
         button_addExam=(Button) findViewById(R.id.button_addExam);
-        button_addExam.setOnClickListener(this);
 
         //button_testNotif=(Button)findViewById(R.id.button_testNotif);
 
@@ -95,6 +95,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     }
 
+    //onClick für Add Exam Button
+    public void switchToAddExam(View view)
+    {
+        Intent intent = new Intent(this, AddExamScreen.class);
+        startActivity(intent);
+    }
+
     //Funktion zum Testen von Notifications
     /*public void sendNotifTEST(View view)
     {
@@ -109,24 +116,4 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
      */
-
-    //onClick für Buttons in Main
-    @Override
-    public void onClick(View view)
-    {
-        switch(view.getId())
-        {
-            case R.id.button_addExam:
-                Intent intent = new Intent(this, AddExamScreen.class);
-                startActivity(intent);
-                break;
-
-           /* case R.id.button_DeleteExam:
-                Intent intent = new Intent(this, );
-                startActivity(intent);
-                break;
-            */
-
-        }
-    }
 }
