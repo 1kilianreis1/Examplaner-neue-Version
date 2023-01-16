@@ -16,7 +16,6 @@ public class ExamController {
     private Examrepository cr;
 
 
-
     @RequestMapping (method = RequestMethod.GET, path = "/getallexam")
     public @ResponseBody ArrayList<Exam> getAllExams() // ArrayList<Exam>
     {
@@ -28,15 +27,31 @@ public class ExamController {
     }
 
     @PostMapping(path = "/insertExams")
-    public @ResponseBody ResponseEntity<Exam> addExam(@RequestParam String name, String subject, String room) {
+    public @ResponseBody ResponseEntity addExam(@RequestParam String name, String subject, String room)
+    {
         Exam a = new Exam();
         a.setText(name);
         a.setRoom(room);
         a.setSubject(subject);
         cr.save(a);
+        //return "ok";
         return new ResponseEntity<>(HttpStatus.OK);
+    }
 
-
+    @GetMapping (path = "/testexam")
+    public @ResponseBody ResponseEntity testexam ()
+    {
+        Exam a = new Exam();
+        a.setText("set");
+        a.setRoom("room");
+        a.setSubject("subject");
+        cr.save(a);
+        //return "ok";
+       return new ResponseEntity<>(HttpStatus.OK);
     }
 }
+// Response Body vs. Request Body
+// Warum autowired
+// wie funktioniert das mit crustrepository
+// Request Param -> Requestbody
 
